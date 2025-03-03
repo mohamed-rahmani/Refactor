@@ -10,11 +10,11 @@ public class Rental {
     }
 
     public double getCharge() {
-        return this.getMovie().getMoviePrice(this.getDaysRented());
+        return this.getMovie().getCharge(this.getDaysRented());
     }
 
     public int getFrequentRenterPoints() {
-        return this.getMovie().getMovieRenterPoint(this.getDaysRented());
+        return this.getMovie().getFrequentRenterPoint(this.getDaysRented());
     }
 
     public int getDaysRented() {
