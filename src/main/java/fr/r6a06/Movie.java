@@ -42,4 +42,12 @@ public class Movie {
         }
         return result;
     }
+
+    public int getMovieRenterPoint(int daysRented) {
+        if ((this.getPriceCode() == Movie.NEW_RELEASE) &&
+                daysRented > 1)
+            return 2;
+        else
+            return 1;
+    }
 }
